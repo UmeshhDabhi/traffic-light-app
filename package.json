@@ -1,6 +1,8 @@
 {
    "name": "traffic-light-app",
-   "homepage": "https://umeshhdabhi.github.io/traffic-light-app/",
+   "homepage": "https://umeshhdabhi.github.io/traffic-light-app",
+   "description": "A simple traffic light simulation app built with React.",
+   "author": "Umesh Dhabhi",
    "private": true,
    "version": "0.0.0",
    "type": "module",
