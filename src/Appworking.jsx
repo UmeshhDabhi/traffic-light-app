@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
 
-function App() {
+function Appworking() {
    const [activeLight, setActiveLight] = useState('red');
    const [carPosition, setCarPosition] = useState(0);
    const [running, setRunning] = useState(true);
    const [timeLeft, setTimeLeft] = useState(3); // seconds left for current light
-   const [volume, setVolume] = useState(50); // Default volume at 50%
+
+   const [volume, setVolume] = useState(20); // Default volume at 50%
    const hornRef = useRef(new Audio('/horn.mp3'));
 
    // Set volume for horn
@@ -88,11 +89,11 @@ function App() {
             🌳 🌳 🌴 🏠 🌲
             <div className="road">
                <div className="car flip" style={{ left: `${carPosition}px` }}>🚗</div>
-               <div className="car flip" style={{ left: `${carPosition - 120}px`, top: '60px' }}>🚙</div>
+               <div className="car flip" style={{ left: `${carPosition - 10}px`, top: '60px' }}>🚙</div>
             </div>
          </div>
       </>
    );
 }
 
-export default App;
+export default Appworking;
